@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Wie Gewerkschaftsmitglieder wählen – How German union members vote. Politbarometer 2025.">
+<meta name="description" content="Wen wählen Gewerkschaftsmitglieder in Deutschland? – Who do union members in Germany vote for? Politbarometer 2025.">
 <style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Union Members at the Ballot</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +85,7 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}
 <header class="top"><div class="topin">
   <span class="brand" data-t="brand"></span>
   <nav class="sec">
-    <a href="#overview" data-t="nav1"></a><a href="#eastwest" data-t="nav2"></a><a href="#drivers" data-t="nav3"></a><a href="#parties" data-t="nav4"></a><a href="#loyalty" data-t="nav5"></a>
+    <a href="#overview" data-t="nav1"></a><a href="#parties" data-t="nav4"></a><a href="#eastwest" data-t="nav2"></a><a href="#drivers" data-t="nav3"></a><a href="#loyalty" data-t="nav5"></a>
   </nav>
   <div class="seg" role="group" aria-label="Language"><button id="lang-de" data-lang="de">DE</button><button id="lang-en" data-lang="en">EN</button></div>
 </div></header>
@@ -95,16 +95,31 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}
     <span class="eyebrow" data-t="eyebrow"></span>
     <h1 data-t="h1"></h1>
     <p class="answer" data-t="answer"></p>
+    <div class="panel">
+      <div class="ctrl"><h3 data-t="hc"></h3><div class="legend" id="lg-hero"></div></div>
+      <div class="chart" id="ch-hero"></div>
+      <p class="note" data-t="hnote"></p>
+    </div>
     <div class="tiles">
-      <div class="tile"><span class="num">+1.2</span><span class="lab" data-t="t1"></span></div>
-      <div class="tile"><span class="num neg">−1.9</span><span class="lab" data-t="t2"></span></div>
-      <div class="tile"><span class="num neg">−4.8</span><span class="lab" data-t="t3"></span></div>
-      <div class="tile"><span class="num">0.2%</span><span class="lab" data-t="t4"></span></div>
+      <div class="tile"><span class="num">+7.6</span><span class="lab" data-t="t1"></span></div>
+      <div class="tile"><span class="num neg">−9.4</span><span class="lab" data-t="t2"></span></div>
+      <div class="tile"><span class="num">+5.2</span><span class="lab" data-t="t3"></span></div>
+      <div class="tile"><span class="num neg">−1.9</span><span class="lab" data-t="t4"></span></div>
     </div>
     <ul class="msgs">
       <li data-t="m1"></li><li data-t="m2"></li><li data-t="m3"></li><li data-t="m4"></li>
     </ul>
   </div>
+
+  
+
+  
+
+  
+
+  
+
+  
 
   <section id="overview">
     <span class="eyebrow" data-t="s1e"></span>
@@ -116,29 +131,6 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}
       <p class="note" data-t="note_adj"></p>
     </div>
   </section>
-
-  <section id="eastwest">
-    <span class="eyebrow" data-t="s2e"></span>
-    <h2 data-t="s2h"></h2>
-    <p class="lede" data-t="s2p"></p>
-    <div class="two">
-      <div class="panel"><h3 data-t="s2c1"></h3><div class="legend" id="lg-ew"></div><div class="chart" id="ch-ew"></div></div>
-      <div class="panel"><h3 data-t="s2c2"></h3><div class="legend" id="lg-g"></div><div class="chart" id="ch-g"></div></div>
-    </div>
-    <p class="note" data-t="note_sig"></p>
-  </section>
-
-  <section id="drivers">
-    <span class="eyebrow" data-t="s3e"></span>
-    <h2 data-t="s3h"></h2>
-    <p class="lede" data-t="s3p"></p>
-    <div class="panel">
-      <div class="ctrl"><h3 data-t="s3c"></h3><div class="seg" id="reg-dr"></div></div>
-      <div class="chart" id="ch-dr"></div>
-      <p class="note" data-t="note_dr"></p>
-    </div>
-  </section>
-
   <section id="parties">
     <span class="eyebrow" data-t="s4e"></span>
     <h2 data-t="s4h"></h2>
@@ -150,7 +142,26 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}
     </div>
     <p class="note" data-t="note_sig"></p>
   </section>
-
+  <section id="eastwest">
+    <span class="eyebrow" data-t="s2e"></span>
+    <h2 data-t="s2h"></h2>
+    <p class="lede" data-t="s2p"></p>
+    <div class="two">
+      <div class="panel"><h3 data-t="s2c1"></h3><div class="legend" id="lg-ew"></div><div class="chart" id="ch-ew"></div></div>
+      <div class="panel"><h3 data-t="s2c2"></h3><div class="legend" id="lg-g"></div><div class="chart" id="ch-g"></div></div>
+    </div>
+    <p class="note" data-t="note_sig"></p>
+  </section>
+  <section id="drivers">
+    <span class="eyebrow" data-t="s3e"></span>
+    <h2 data-t="s3h"></h2>
+    <p class="lede" data-t="s3p"></p>
+    <div class="panel">
+      <div class="ctrl"><h3 data-t="s3c"></h3><div class="seg" id="reg-dr"></div></div>
+      <div class="chart" id="ch-dr"></div>
+      <p class="note" data-t="note_dr"></p>
+    </div>
+  </section>
   <section id="loyalty">
     <span class="eyebrow" data-t="s5e"></span>
     <h2 data-t="s5h"></h2>
@@ -172,19 +183,19 @@ footer{margin-top:40px;font-size:13px;color:var(--muted)}
 <script>
 const D={"ov":{"Germany":[{"p":"CDU/CSU","non":30.7,"mem":20.6,"gap":-9.4,"se":1.0},{"p":"SPD","non":15.1,"mem":22.3,"gap":7.6,"se":1.0},{"p":"Grüne","non":17.4,"mem":16.4,"gap":-0.5,"se":0.8},{"p":"Linke","non":9.6,"mem":13.4,"gap":5.2,"se":0.8},{"p":"AfD","non":17.4,"mem":18.6,"gap":-1.9,"se":1.0},{"p":"BSW","non":2.8,"mem":2.9,"gap":0.2,"se":0.4},{"p":"FDP","non":3.2,"mem":1.5,"gap":-1.3,"se":0.3}],"West":[{"p":"CDU/CSU","non":32.4,"mem":21.2,"gap":-10.3,"se":1.1},{"p":"SPD","non":15.6,"mem":23.4,"gap":7.9,"se":1.1},{"p":"Grüne","non":19.1,"mem":17.8,"gap":-0.1,"se":0.9},{"p":"Linke","non":8.7,"mem":12.5,"gap":5.1,"se":0.9},{"p":"AfD","non":14.7,"mem":17.1,"gap":-1.2,"se":1.1},{"p":"BSW","non":2.0,"mem":2.1,"gap":-0.0,"se":0.4},{"p":"FDP","non":3.5,"mem":1.5,"gap":-1.3,"se":0.4}],"East":[{"p":"CDU/CSU","non":23.3,"mem":17.1,"gap":-5.2,"se":1.6},{"p":"SPD","non":12.9,"mem":16.2,"gap":5.2,"se":1.6},{"p":"Grüne","non":9.9,"mem":8.6,"gap":-2.2,"se":1.1},{"p":"Linke","non":13.5,"mem":18.1,"gap":4.9,"se":1.7},{"p":"AfD","non":29.2,"mem":27.0,"gap":-4.8,"se":2.1},{"p":"BSW","non":6.0,"mem":6.9,"gap":1.3,"se":1.1},{"p":"FDP","non":2.3,"mem":1.4,"gap":-0.8,"se":0.5}]},"mods":{"AfD":{"agegrp":{"East":{"p":0.027,"rows":[{"l":"18–29","non":18.7,"gap":16.4,"se":7.52,"n":56},{"l":"30–44","non":37.6,"gap":-12.4,"se":4.46,"n":213},{"l":"45–59","non":37.9,"gap":-5.2,"se":3.89,"n":296},{"l":"60–69","non":32.2,"gap":-4.3,"se":4.74,"n":260},{"l":"70+","non":16.2,"gap":-5.0,"se":3.3,"n":239}]},"Germany":{"p":0.105,"rows":[{"l":"18–29","non":13.6,"gap":3.9,"se":2.78,"n":325},{"l":"30–44","non":25.1,"gap":-3.7,"se":2.04,"n":936},{"l":"45–59","non":22.0,"gap":-0.6,"se":1.9,"n":1221},{"l":"60–69","non":17.7,"gap":-4.1,"se":1.99,"n":1001},{"l":"70+","non":7.7,"gap":-3.6,"se":1.67,"n":707}]},"West":{"p":0.373,"rows":[{"l":"18–29","non":12.9,"gap":2.4,"se":2.97,"n":269},{"l":"30–44","non":22.3,"gap":-1.8,"se":2.27,"n":723},{"l":"45–59","non":18.5,"gap":0.3,"se":2.13,"n":925},{"l":"60–69","non":13.8,"gap":-3.6,"se":2.18,"n":741},{"l":"70+","non":5.4,"gap":-3.3,"se":1.89,"n":468}]}},"gender":{"East":{"p":0.293,"rows":[{"l":"Men","non":36.5,"gap":-6.7,"se":2.8,"n":666},{"l":"Women","non":22.0,"gap":-2.4,"se":3.03,"n":398}]},"Germany":{"p":0.046,"rows":[{"l":"Men","non":22.7,"gap":-3.4,"se":1.24,"n":2757},{"l":"Women","non":12.2,"gap":0.3,"se":1.43,"n":1433}]},"West":{"p":0.107,"rows":[{"l":"Men","non":19.5,"gap":-2.5,"se":1.37,"n":2091},{"l":"Women","non":9.9,"gap":0.8,"se":1.6,"n":1035}]}}},"BSW":{"agegrp":{"East":{"p":0.963,"rows":[{"l":"18–29","non":3.2,"gap":2.7,"se":4.45,"n":56},{"l":"30–44","non":4.2,"gap":1.7,"se":2.42,"n":213},{"l":"45–59","non":5.3,"gap":0.6,"se":1.91,"n":296},{"l":"60–69","non":8.1,"gap":0.3,"se":2.12,"n":260},{"l":"70+","non":7.3,"gap":2.1,"se":2.43,"n":239}]},"Germany":{"p":0.361,"rows":[{"l":"18–29","non":2.6,"gap":0.0,"se":1.18,"n":325},{"l":"30–44","non":2.7,"gap":1.3,"se":0.97,"n":936},{"l":"45–59","non":2.9,"gap":-0.4,"se":0.6,"n":1221},{"l":"60–69","non":2.8,"gap":0.6,"se":0.94,"n":1001},{"l":"70+","non":2.7,"gap":-0.8,"se":0.56,"n":707}]},"West":{"p":0.117,"rows":[{"l":"18–29","non":2.5,"gap":-0.3,"se":1.18,"n":269},{"l":"30–44","non":2.4,"gap":1.2,"se":1.06,"n":723},{"l":"45–59","non":2.4,"gap":-0.6,"se":0.61,"n":925},{"l":"60–69","non":1.4,"gap":0.7,"se":1.03,"n":741},{"l":"70+","non":1.5,"gap":-1.3,"se":0.43,"n":468}]}},"gender":{"East":{"p":0.346,"rows":[{"l":"Men","non":5.4,"gap":0.4,"se":1.18,"n":666},{"l":"Women","non":6.6,"gap":2.5,"se":1.99,"n":398}]},"Germany":{"p":0.515,"rows":[{"l":"Men","non":2.6,"gap":0.4,"se":0.51,"n":2757},{"l":"Women","non":3.0,"gap":-0.1,"se":0.58,"n":1433}]},"West":{"p":0.212,"rows":[{"l":"Men","non":1.9,"gap":0.4,"se":0.56,"n":2091},{"l":"Women","non":2.1,"gap":-0.6,"se":0.56,"n":1035}]}}},"CDU/CSU":{"agegrp":{"East":{"p":0.073,"rows":[{"l":"18–29","non":8.5,"gap":-4.2,"se":3.1,"n":56},{"l":"30–44","non":13.7,"gap":-1.0,"se":3.4,"n":213},{"l":"45–59","non":20.6,"gap":-4.1,"se":3.34,"n":296},{"l":"60–69","non":27.4,"gap":-3.5,"se":3.66,"n":260},{"l":"70+","non":35.5,"gap":-14.8,"se":3.71,"n":239}]},"Germany":{"p":0.0,"rows":[{"l":"18–29","non":11.7,"gap":-4.7,"se":2.09,"n":325},{"l":"30–44","non":19.6,"gap":-2.6,"se":1.83,"n":936},{"l":"45–59","non":32.0,"gap":-8.9,"se":1.96,"n":1221},{"l":"60–69","non":36.0,"gap":-13.0,"se":2.18,"n":1001},{"l":"70+","non":46.6,"gap":-20.4,"se":2.68,"n":707}]},"West":{"p":0.0,"rows":[{"l":"18–29","non":12.2,"gap":-4.7,"se":2.33,"n":269},{"l":"30–44","non":21.0,"gap":-3.0,"se":2.08,"n":723},{"l":"45–59","non":34.5,"gap":-9.9,"se":2.23,"n":925},{"l":"60–69","non":38.2,"gap":-14.7,"se":2.5,"n":741},{"l":"70+","non":49.6,"gap":-22.0,"se":3.16,"n":468}]}},"gender":{"East":{"p":0.003,"rows":[{"l":"Men","non":20.5,"gap":-1.1,"se":2.18,"n":666},{"l":"Women","non":26.0,"gap":-10.6,"se":2.38,"n":398}]},"Germany":{"p":0.043,"rows":[{"l":"Men","non":30.6,"gap":-7.9,"se":1.27,"n":2757},{"l":"Women","non":30.8,"gap":-11.9,"se":1.54,"n":1433}]},"West":{"p":0.243,"rows":[{"l":"Men","non":32.9,"gap":-9.3,"se":1.45,"n":2091},{"l":"Women","non":31.9,"gap":-11.9,"se":1.79,"n":1035}]}}},"Linke":{"agegrp":{"East":{"p":0.002,"rows":[{"l":"18–29","non":40.4,"gap":-18.4,"se":6.28,"n":56},{"l":"30–44","non":15.5,"gap":6.6,"se":3.81,"n":213},{"l":"45–59","non":8.9,"gap":5.3,"se":2.67,"n":296},{"l":"60–69","non":8.6,"gap":6.3,"se":3.19,"n":260},{"l":"70+","non":10.3,"gap":12.1,"se":3.97,"n":239}]},"Germany":{"p":0.404,"rows":[{"l":"18–29","non":30.3,"gap":3.9,"se":3.39,"n":325},{"l":"30–44","non":11.7,"gap":7.5,"se":1.87,"n":936},{"l":"45–59","non":4.9,"gap":3.7,"se":0.91,"n":1221},{"l":"60–69","non":4.4,"gap":5.4,"se":1.22,"n":1001},{"l":"70+","non":4.1,"gap":5.1,"se":1.43,"n":707}]},"West":{"p":0.368,"rows":[{"l":"18–29","non":28.8,"gap":6.6,"se":3.7,"n":269},{"l":"30–44","non":10.9,"gap":7.6,"se":2.09,"n":723},{"l":"45–59","non":4.0,"gap":3.4,"se":0.96,"n":925},{"l":"60–69","non":3.3,"gap":5.0,"se":1.31,"n":741},{"l":"70+","non":2.4,"gap":3.6,"se":1.5,"n":468}]}},"gender":{"East":{"p":0.043,"rows":[{"l":"Men","non":11.8,"gap":1.7,"se":1.86,"n":666},{"l":"Women","non":15.3,"gap":9.1,"se":3.13,"n":398}]},"Germany":{"p":0.012,"rows":[{"l":"Men","non":8.1,"gap":3.6,"se":0.82,"n":2757},{"l":"Women","non":11.0,"gap":7.7,"se":1.47,"n":1433}]},"West":{"p":0.048,"rows":[{"l":"Men","non":7.3,"gap":3.7,"se":0.9,"n":2091},{"l":"Women","non":10.0,"gap":7.4,"se":1.65,"n":1035}]}}},"SPD":{"agegrp":{"East":{"p":0.471,"rows":[{"l":"18–29","non":7.0,"gap":10.6,"se":6.59,"n":56},{"l":"30–44","non":6.5,"gap":2.7,"se":2.72,"n":213},{"l":"45–59","non":9.5,"gap":6.8,"se":3.08,"n":296},{"l":"60–69","non":12.3,"gap":1.1,"se":3.13,"n":260},{"l":"70+","non":23.6,"gap":7.1,"se":4.19,"n":239}]},"Germany":{"p":0.0,"rows":[{"l":"18–29","non":8.8,"gap":3.7,"se":2.52,"n":325},{"l":"30–44","non":9.5,"gap":-1.5,"se":1.32,"n":936},{"l":"45–59","non":13.1,"gap":7.2,"se":1.79,"n":1221},{"l":"60–69","non":16.5,"gap":11.0,"se":2.33,"n":1001},{"l":"70+","non":24.8,"gap":21.0,"se":3.01,"n":707}]},"West":{"p":0.0,"rows":[{"l":"18–29","non":9.0,"gap":3.0,"se":2.71,"n":269},{"l":"30–44","non":10.2,"gap":-2.4,"se":1.48,"n":723},{"l":"45–59","non":13.9,"gap":7.2,"se":2.04,"n":925},{"l":"60–69","non":17.6,"gap":12.5,"se":2.69,"n":741},{"l":"70+","non":25.2,"gap":23.9,"se":3.51,"n":468}]}},"gender":{"East":{"p":0.589,"rows":[{"l":"Men","non":9.8,"gap":5.9,"se":1.95,"n":666},{"l":"Women","non":16.0,"gap":4.2,"se":2.71,"n":398}]},"Germany":{"p":0.113,"rows":[{"l":"Men","non":12.7,"gap":8.8,"se":1.2,"n":2757},{"l":"Women","non":17.5,"gap":5.7,"se":1.57,"n":1433}]},"West":{"p":0.161,"rows":[{"l":"Men","non":13.4,"gap":9.1,"se":1.38,"n":2091},{"l":"Women","non":17.8,"gap":6.0,"se":1.81,"n":1035}]}}}},"shap":{"Germany":{"Union membership":0.2,"Gender":8.8,"Age":15.8,"Education":21.0,"Occupational status":14.6,"Employment status":12.5,"Federal state":15.9,"Town size":5.6,"Survey month":1.8,"Interview mode":3.8},"West":{"Union membership":0.2,"Gender":10.0,"Age":19.0,"Education":22.7,"Occupational status":15.1,"Employment status":15.7,"Federal state":3.3,"Town size":5.0,"Survey month":3.1,"Interview mode":5.9},"East":{"Union membership":1.0,"Gender":9.8,"Age":20.8,"Education":21.8,"Occupational status":14.8,"Employment status":11.4,"Federal state":2.9,"Town size":12.6,"Survey month":2.2,"Interview mode":2.7},"_r2":{"Germany":0.128,"West":0.108,"East":0.149}},"loy":{"A":[{"p":"CDU/CSU","non":75.3,"mem":74.1,"gap":4.2,"pv":0.377,"n":178},{"p":"SPD","non":49.1,"mem":60.4,"gap":14.2,"pv":0.0,"n":307},{"p":"Grüne","non":67.0,"mem":71.4,"gap":2.7,"pv":0.509,"n":231},{"p":"FDP","non":25.2,"mem":33.7,"gap":9.8,"pv":0.195,"n":53},{"p":"Linke","non":61.0,"mem":51.1,"gap":-2.3,"pv":0.743,"n":94},{"p":"AfD","non":94.4,"mem":92.3,"gap":-0.9,"pv":0.858,"n":67},{"p":"All parties","non":63.2,"mem":64.8,"gap":5.9,"pv":0.012,"n":930}],"B":[{"p":"CDU/CSU","non":85.0,"mem":74.0,"gap":-8.5,"pv":0.001,"n":740},{"p":"SPD","non":78.5,"mem":79.8,"gap":1.5,"pv":0.514,"n":709},{"p":"Grüne","non":85.7,"mem":85.0,"gap":0.0,"pv":0.991,"n":630},{"p":"FDP","non":58.7,"mem":50.3,"gap":-7.3,"pv":0.429,"n":62},{"p":"Linke","non":85.5,"mem":88.9,"gap":5.2,"pv":0.026,"n":428},{"p":"AfD","non":96.3,"mem":98.1,"gap":1.6,"pv":0.098,"n":377},{"p":"BSW","non":74.4,"mem":76.5,"gap":-0.3,"pv":0.966,"n":104},{"p":"All parties","non":84.5,"mem":82.7,"gap":-1.3,"pv":0.224,"n":3050}]},"dec":{"Gender":{"Germany":0.9,"West":0.87,"East":0.83},"Age":{"Germany":1.4,"West":1.19,"East":2.15},"Education":{"Germany":0.26,"West":0.38,"East":-0.31},"Occupational status":{"Germany":0.23,"West":0.33,"East":-0.45},"Employment status":{"Germany":0.72,"West":0.76,"East":0.65},"Federal state":{"Germany":-0.5,"West":-0.07,"East":0.1},"Town size":{"Germany":-0.07,"West":0.0,"East":-0.5},"Survey month":{"Germany":-0.01,"West":-0.02,"East":-0.07},"Interview mode":{"Germany":0.23,"West":0.22,"East":0.21},"_raw":{"Germany":1.22,"West":2.43,"East":-2.22},"_adj":{"Germany":-1.93,"West":-1.23,"East":-4.82},"_sum":{"Germany":3.15,"West":3.66,"East":2.6}}};
 const I={
-en:{brand:"Unions & the vote · Germany 2025",nav1:"All parties",nav2:"East–West",nav3:"What drives AfD voting",nav4:"By party",nav5:"Loyalty",
-eyebrow:"Politbarometer 2025 · 28,471 respondents with a party choice",
-h1:"Do union members vote more AfD? Or not?",
-answer:"In the raw numbers, slightly more. <b>Compared like-for-like, slightly less</b>, and clearly less in East Germany. But union membership is a minor factor next to age, education and region.",
-t1:"pts: AfD gap, members vs non-members, raw (Germany)",t2:"pts: same gap after controls for age, gender, education, job, region",t3:"pts: adjusted gap in East Germany",t4:"of the explained variation in AfD voting is due to union membership",
-m1:"<b>Composition, not politics, drives the raw figure.</b> Members are mostly working-age men in full-time jobs, the group where AfD support peaks.",
-m2:"<b>The AfD gap is a men's and an East German effect:</b> −3.4 pts among men, none among women; −4.8 pts in the East.",
-m3:"<b>The SPD bond is generational.</b> In the West, members over 70 vote SPD 24 pts more than comparable non-members; under 45 there is no gap.",
-m4:"<b>No firewall.</b> After the 2025 election, members moved to the AfD as often as non-members, and CDU/CSU voters among them defected faster.",
-s1e:"Overview",s1h:"How union members vote, with and without controls",
+en:{brand:"Union members & the vote · Germany 2025",nav1:"Controls",nav2:"East–West & AfD",nav3:"Drivers of AfD voting",nav4:"By party",nav5:"Loyalty",
+eyebrow:"Politbarometer 2025 · 28,471 respondents with a party choice",hc:"Bundestag vote intention, 2025 (%)",hnote:"Raw weighted shares. Union members: n = 4,190. Hover for the adjusted gap after controls.",adjgap:"Adjusted gap",
+h1:"Who do union members in Germany vote for?",
+answer:"More SPD and Linke, less CDU/CSU and FDP than other voters. <b>The union electorate still leans left, but the classic SPD bond now rests on older members.</b> On the AfD, members differ little from comparable non-members.",
+t1:"pts: SPD, members vs comparable non-members",t2:"pts: CDU/CSU, members vs comparable non-members",t3:"pts: Linke, members vs comparable non-members",t4:"pts: AfD, members vs comparable non-members (East: −4.8)",
+m1:"<b>A left-leaning electorate.</b> 22% of union members intend to vote SPD and 13% Linke, against 15% and 10% of non-members; only 21% back the CDU/CSU (non-members 31%).",
+m2:"<b>The SPD bond is generational.</b> In the West, members over 70 vote SPD 24 pts more than comparable non-members; under 45 there is no gap. The CDU/CSU gap mirrors it.",
+m3:"<b>The Linke link is broad and female.</b> It holds at every age and is twice as strong among women (+7.7 vs +3.6 pts).",
+m4:"<b>On the AfD, membership is no firewall.</b> Raw figures are similar (19% vs 17%); like-for-like, members are slightly less AfD-leaning, mainly men and in the East.",
+s1e:"Controlling for composition",s1h:"How much is membership, how much is who members are?",
 s1p:"Grey: non-members. Light blue: union members as they are. Dark blue: union members compared with non-members of the same profile. The gap between the two blues shows how much is composition.",
 note_adj:"Dark blue = non-member share plus the adjusted membership gap from a weighted linear probability model controlling for gender, age, education, occupation, employment status, federal state, town size, survey month and interview mode. Whisker = 95% confidence interval. Hover for details.",
-s2e:"East–West divide",s2h:"The union–AfD link is stronger in the East, and among men",
+s2e:"East–West divide & the AfD",s2h:"The union–AfD link is stronger in the East, and among men",
 s2p:"In West Germany, the raw gap even points the other way (+2.4) and disappears after controls. In the East, members are less AfD-leaning to begin with, and the gap widens to about 5 points like-for-like.",
 s2c1:"AfD vote share by region",s2c2:"AfD vote share by gender, like-for-like",
 note_sig:"Red difference = statistically significant (p < .05); grey = not significant. Faded bars: fewer than 60 union members in the group.",
@@ -203,6 +214,7 @@ ml:["Data: Forschungsgruppe Wahlen, Politbarometer 2025 (GESIS ZA9151), cumulate
 "Union member = the respondent is a member. Reference group = no union member in the household; people living with a member are kept apart.",
 "Controls: gender, age (11 groups), education (4), occupational status (7), employment status (6), federal state, town size, survey month, interview mode. Weighted (total weight nationally, representative weight within East/West). Robust standard errors.",
 "East includes East Berlin, West includes West Berlin. Logit models give practically identical results.",
+"The survey only asks whether someone is a union member. It has no information on activity (e.g. shop stewards, works council members), which union, or length of membership.",
 "These are associations, not causal effects. One year of data cannot separate ageing from generational change. Recalled vote is subject to recall bias."],
 foot:"Own calculations. Research note, 2026.",
 party:{
@@ -210,21 +222,22 @@ party:{
 "SPD":["Union members are clearly more likely to vote SPD (+7.6 pts), but the bond is generational.","In West Germany, the gap is +24 pts among over-70s and absent under 45. In the East it is smaller (about +5) and flat."],
 "CDU/CSU":["Members are about 10 pts less likely to vote CDU/CSU. Mirror image of the SPD: the gap grows with age.","Exceptions: civil servants and East German men show no gap. After the 2025 election, members who had voted CDU/CSU defected faster."],
 "Linke":["Members are about 5 pts more likely to vote Linke, at almost every age.","The link is twice as strong among women (+7.7 vs +3.6 pts), and members who voted Linke in 2025 stayed more loyal."],
+"Grüne":["Union members vote Greens about as often as comparable non-members (−0.5 pts).","No significant differences by region; detailed age and gender breakdowns were not computed for the Greens."],
 "BSW":["No union effect at all: the gap stays within ±1.5 pts in every group.","Despite its pitch to working people, union members are no more likely to vote BSW."]}
 },
-de:{brand:"Gewerkschaften & Wahlverhalten · Deutschland 2025",nav1:"Alle Parteien",nav2:"Ost–West",nav3:"Was die AfD-Wahl erklärt",nav4:"Nach Partei",nav5:"Treue",
-eyebrow:"Politbarometer 2025 · 28.471 Befragte mit Parteipräferenz",
-h1:"Wählen Gewerkschaftsmitglieder eher AfD? Oder nicht?",
-answer:"In den Rohzahlen etwas häufiger. <b>Im fairen Vergleich etwas seltener</b>, in Ostdeutschland deutlich seltener. Doch neben Alter, Bildung und Region spielt die Mitgliedschaft nur eine kleine Rolle.",
-t1:"Punkte: AfD-Abstand Mitglieder vs. Nichtmitglieder, roh (Deutschland)",t2:"Punkte: gleicher Abstand nach Kontrolle für Alter, Geschlecht, Bildung, Beruf, Region",t3:"Punkte: bereinigter Abstand in Ostdeutschland",t4:"der erklärten Varianz der AfD-Wahl gehen auf Gewerkschaftsmitgliedschaft zurück",
-m1:"<b>Die Rohzahl spiegelt die Zusammensetzung, nicht die Politik.</b> Mitglieder sind überwiegend Männer im Erwerbsalter in Vollzeit, also die Gruppe mit der höchsten AfD-Zustimmung.",
-m2:"<b>Der AfD-Abstand ist ein Männer- und ein Ost-Effekt:</b> −3,4 Punkte bei Männern, keiner bei Frauen; −4,8 Punkte im Osten.",
-m3:"<b>Die SPD-Bindung ist eine Generationenfrage.</b> Im Westen wählen Mitglieder über 70 um 24 Punkte häufiger SPD als vergleichbare Nichtmitglieder; unter 45 gibt es keinen Abstand.",
-m4:"<b>Keine Brandmauer.</b> Nach der Wahl 2025 wanderten Mitglieder ebenso oft zur AfD wie Nichtmitglieder, und Unionswähler unter ihnen wandten sich schneller ab.",
-s1e:"Überblick",s1h:"Wie Gewerkschaftsmitglieder wählen, mit und ohne Kontrollvariablen",
+de:{brand:"Gewerkschaftsmitglieder & Wahlverhalten · Deutschland 2025",nav1:"Kontrolliert",nav2:"Ost–West & AfD",nav3:"Faktoren der AfD-Wahl",nav4:"Nach Partei",nav5:"Treue",
+eyebrow:"Politbarometer 2025 · 28.471 Befragte mit Parteipräferenz",hc:"Wahlabsicht Bundestag, 2025 (%)",hnote:"Gewichtete Rohanteile. Gewerkschaftsmitglieder: n = 4.190. Für den bereinigten Abstand mit der Maus über die Balken fahren.",adjgap:"Bereinigter Abstand",
+h1:"Wen wählen Gewerkschaftsmitglieder in Deutschland?",
+answer:"Mehr SPD und Linke, weniger CDU/CSU und FDP als andere Wähler. <b>Die Gewerkschaftswählerschaft steht weiter links, doch die klassische SPD-Bindung ruht heute auf älteren Mitgliedern.</b> Bei der AfD unterscheiden sich Mitglieder kaum von vergleichbaren Nichtmitgliedern.",
+t1:"Punkte: SPD, Mitglieder vs. vergleichbare Nichtmitglieder",t2:"Punkte: CDU/CSU, Mitglieder vs. vergleichbare Nichtmitglieder",t3:"Punkte: Linke, Mitglieder vs. vergleichbare Nichtmitglieder",t4:"Punkte: AfD, Mitglieder vs. vergleichbare Nichtmitglieder (Ost: −4,8)",
+m1:"<b>Eine links geneigte Wählerschaft.</b> 22% der Gewerkschaftsmitglieder wollen SPD und 13% Linke wählen, gegenüber 15% und 10% der Nichtmitglieder; nur 21% die CDU/CSU (Nichtmitglieder 31%).",
+m2:"<b>Die SPD-Bindung ist eine Generationenfrage.</b> Im Westen wählen Mitglieder über 70 um 24 Punkte häufiger SPD als vergleichbare Nichtmitglieder; unter 45 gibt es keinen Abstand. Bei der CDU/CSU spiegelbildlich.",
+m3:"<b>Die Linke-Bindung ist breit und weiblich.</b> Sie zeigt sich in jedem Alter und ist bei Frauen doppelt so stark (+7,7 vs. +3,6 Punkte).",
+m4:"<b>Bei der AfD ist die Mitgliedschaft keine Brandmauer.</b> Roh ähnliche Anteile (19% vs. 17%); im fairen Vergleich wählen Mitglieder etwas seltener AfD, vor allem Männer und im Osten.",
+s1e:"Zusammensetzung kontrolliert",s1h:"Was ist Mitgliedschaft, was ist Zusammensetzung?",
 s1p:"Grau: Nichtmitglieder. Hellblau: Gewerkschaftsmitglieder, wie sie sind. Dunkelblau: Mitglieder im Vergleich zu Nichtmitgliedern mit gleichem Profil. Der Unterschied zwischen den beiden Blautönen zeigt den Effekt der Zusammensetzung.",
 note_adj:"Dunkelblau = Anteil bei Nichtmitgliedern plus bereinigter Mitgliedschaftseffekt aus einem gewichteten linearen Wahrscheinlichkeitsmodell mit Kontrolle für Geschlecht, Alter, Bildung, Beruf, Erwerbsstatus, Bundesland, Ortsgröße, Befragungsmonat und Befragungsmodus. Linie = 95%-Konfidenzintervall. Für Details mit der Maus über die Balken fahren.",
-s2e:"Ost–West-Gefälle",s2h:"Der Zusammenhang Gewerkschaft–AfD ist im Osten und bei Männern stärker",
+s2e:"Ost–West-Gefälle & AfD",s2h:"Der Zusammenhang Gewerkschaft–AfD ist im Osten und bei Männern stärker",
 s2p:"In Westdeutschland zeigt der Rohwert sogar in die andere Richtung (+2,4) und verschwindet nach Kontrolle. Im Osten wählen Mitglieder schon roh seltener AfD, und im fairen Vergleich wächst der Abstand auf rund 5 Punkte.",
 s2c1:"AfD-Anteil nach Region",s2c2:"AfD-Anteil nach Geschlecht, fairer Vergleich",
 note_sig:"Roter Abstand = statistisch signifikant (p < 0,05); grau = nicht signifikant. Blasse Balken: weniger als 60 Gewerkschaftsmitglieder in der Gruppe.",
@@ -243,6 +256,7 @@ ml:["Daten: Forschungsgruppe Wahlen, Politbarometer 2025 (GESIS ZA9151), kumulie
 "Gewerkschaftsmitglied = die befragte Person ist Mitglied. Vergleichsgruppe = kein Mitglied im Haushalt; Personen, die mit einem Mitglied zusammenleben, werden getrennt geführt.",
 "Kontrollvariablen: Geschlecht, Alter (11 Gruppen), Bildung (4), beruflicher Status (7), Erwerbsstatus (6), Bundesland, Ortsgröße, Befragungsmonat, Befragungsmodus. Gewichtet (Gesamtgewicht bundesweit, Repräsentativgewicht innerhalb Ost/West). Robuste Standardfehler.",
 "Ost einschließlich Ost-Berlin, West einschließlich West-Berlin. Logit-Modelle liefern praktisch identische Ergebnisse.",
+"Die Befragung erfasst nur, ob jemand Gewerkschaftsmitglied ist. Angaben zu Aktivität (z. B. Vertrauensleute, Betriebsräte), zur Gewerkschaft oder zur Mitgliedsdauer fehlen.",
 "Es handelt sich um Zusammenhänge, nicht um kausale Effekte. Ein Jahr Daten kann Alters- und Generationeneffekte nicht trennen. Die erinnerte Wahl unterliegt Erinnerungsfehlern."],
 foot:"Eigene Berechnungen. Forschungsnotiz, 2026.",
 party:{
@@ -250,13 +264,14 @@ party:{
 "SPD":["Gewerkschaftsmitglieder wählen deutlich häufiger SPD (+7,6 Punkte), doch die Bindung ist eine Generationenfrage.","Im Westen beträgt der Abstand bei über 70-Jährigen +24 Punkte, unter 45 gibt es keinen. Im Osten ist er kleiner (rund +5) und gleichmäßig."],
 "CDU/CSU":["Mitglieder wählen rund 10 Punkte seltener CDU/CSU, spiegelbildlich zur SPD: Der Abstand wächst mit dem Alter.","Ausnahmen: Beamte und ostdeutsche Männer zeigen keinen Abstand. Nach der Wahl 2025 wandten sich Mitglieder, die CDU/CSU gewählt hatten, schneller ab."],
 "Linke":["Mitglieder wählen rund 5 Punkte häufiger Linke, in fast jedem Alter.","Bei Frauen ist der Zusammenhang doppelt so stark (+7,7 vs. +3,6 Punkte), und Mitglieder, die 2025 Linke wählten, blieben treuer."],
+"Grüne":["Gewerkschaftsmitglieder wählen etwa so oft Grüne wie vergleichbare Nichtmitglieder (−0,5 Punkte).","Keine signifikanten regionalen Unterschiede; Alters- und Geschlechtsaufschlüsselungen wurden für die Grünen nicht berechnet."],
 "BSW":["Kein Gewerkschaftseffekt: Der Abstand bleibt in jeder Gruppe innerhalb von ±1,5 Punkten.","Trotz seiner Ansprache an Arbeitnehmer wählen Gewerkschaftsmitglieder nicht häufiger BSW."]}
 }};
 const FACT={en:{"Union membership":"Union membership","Gender":"Gender","Age":"Age","Education":"Education","Occupational status":"Occupational status","Employment status":"Employment status","Federal state":"Federal state","Town size":"Town size","Survey month":"Survey month","Interview mode":"Interview mode"},
 de:{"Union membership":"Gewerkschaftsmitgliedschaft","Gender":"Geschlecht","Age":"Alter","Education":"Bildung","Occupational status":"Beruflicher Status","Employment status":"Erwerbsstatus","Federal state":"Bundesland","Town size":"Ortsgröße","Survey month":"Befragungsmonat","Interview mode":"Befragungsmodus"}};
-const PC={"CDU/CSU":"#3a3a3a","SPD":"#e3000f","Linke":"#be3075","AfD":"#009ee0","BSW":"#d99a00"};
+const PC={"Grüne":"#46962b","CDU/CSU":"#3a3a3a","SPD":"#e3000f","Linke":"#be3075","AfD":"#009ee0","BSW":"#d99a00"};
 let lang=((navigator.language||"").slice(0,2)==="de")?"de":"en"; try{const s=localStorage.getItem("uv-lang");if(s)lang=s}catch(e){}
-const st={ov:"Germany",dr:"Germany",age:"West",gen:"Germany",loy:"B",party:"AfD"};
+const st={ov:"Germany",dr:"Germany",age:"West",gen:"Germany",loy:"B",party:"SPD"};
 const t=k=>I[lang][k]??k;
 const fmt=(v,d=1)=>{const s=Math.abs(v).toFixed(d);const x=lang==="de"?s.replace(".",","):s;return (v<0?"−":"")+x};
 const sgn=v=>(v>0?"+":"")+fmt(v);
@@ -297,6 +312,13 @@ function bars(id,groups,{h=300,max=null,gapTop=true}={}){
   el("line",{x1:m.l,x2:W-m.r,y1:y(0),y2:y(0),stroke:css("--muted")},svg);
 }
 const tipRow=(title,rows)=>`<b>${title}</b><br>`+rows.map(([a,b])=>`${a}: ${b}`).join("<br>");
+function drawHero(){
+  const rows=D.ov.Germany;
+  bars("ch-hero",rows.map(r=>({label:r.p,gap:{g:r.mem-r.non,s:false},bars:[
+    {v:r.non,c:"--non",tip:()=>tipRow(r.p,[[t("non"),fmt(r.non)+"%"]])},
+    {v:r.mem,c:"--mem",bold:1,tip:()=>tipRow(r.p,[[t("mem"),fmt(r.mem)+"%"],[t("adjgap"),sgn(r.gap)+" "+t("pts")]])}]})),{h:290,gapTop:false});
+  legend("lg-hero",[["--non",t("non")],["--mem",t("mem")]]);
+}
 function drawOverview(){
   const rows=D.ov[st.ov];
   bars("ch-ov",rows.map(r=>{const a=r.non+r.gap;return{label:r.p,gap:{g:r.gap,se:r.se},bars:[
@@ -335,12 +357,13 @@ function modChart(id,party,mod,reg,pid){
 }
 function drawParty(){
   const tabs=document.getElementById("ptabs");tabs.innerHTML="";
-  ["AfD","SPD","CDU/CSU","Linke","BSW"].forEach(p=>{const b=document.createElement("button");b.setAttribute("role","tab");b.id="tab-"+p.replace("/","");b.textContent=p;b.style.setProperty("--pc",PC[p]);b.setAttribute("aria-selected",st.party===p);b.onclick=()=>{st.party=p;drawParty()};tabs.appendChild(b)});
+  ["SPD","CDU/CSU","Linke","Grüne","AfD","BSW"].forEach(p=>{const b=document.createElement("button");b.setAttribute("role","tab");b.id="tab-"+p.replace("/","");b.textContent=p;b.style.setProperty("--pc",PC[p]);b.setAttribute("aria-selected",st.party===p);b.onclick=()=>{st.party=p;drawParty()};tabs.appendChild(b)});
   const tx=I[lang].party[st.party];const ov=D.ov.Germany.find(x=>x.p===st.party);
   document.getElementById("ptext").innerHTML=`<p class="big">${tx[0]}</p><p>${tx[1]}</p><p><span class="chip">${t("Germany")}: ${sgn(ov.gap)} ${t("pts")}</span> <span class="chip">${t("West")}: ${sgn(D.ov.West.find(x=>x.p===st.party).gap)}</span> <span class="chip">${t("East")}: ${sgn(D.ov.East.find(x=>x.p===st.party).gap)}</span></p>`;
   seg("reg-age",[["West",t("West")],["East",t("East")],["Germany",t("Germany")]],"age",drawParty);
   seg("reg-gen",[["Germany",t("Germany")],["West",t("West")],["East",t("East")]],"gen",drawParty);
-  modChart("ch-age",st.party,"agegrp",st.age,"p-age");modChart("ch-gen",st.party,"gender",st.gen,"p-gen");
+  const has=!!D.mods[st.party];document.querySelectorAll("#parties .two").forEach(x=>x.hidden=!has);
+  if(has){modChart("ch-age",st.party,"agegrp",st.age,"p-age");modChart("ch-gen",st.party,"gender",st.gen,"p-gen");}
   legend("lg-age",[["--non",t("non")],["--mem",t("adj")]]);legend("lg-gen",[["--non",t("non")],["--mem",t("adj")]]);
 }
 function drawLoy(){
@@ -358,7 +381,7 @@ function render(){
   seg("reg-ov",[["Germany",t("Germany")],["West",t("West")],["East",t("East")]],"ov",drawOverview);
   seg("reg-dr",[["Germany",t("Germany")],["West",t("West")],["East",t("East")]],"dr",drawDrivers);
   seg("per-loy",[["A",t("perA")],["B",t("perB")]],"loy",drawLoy);
-  drawOverview();drawEW();drawDrivers();drawParty();drawLoy();
+  drawHero();drawOverview();drawEW();drawDrivers();drawParty();drawLoy();
 }
 document.querySelectorAll(".topin .seg button").forEach(b=>b.onclick=()=>{lang=b.dataset.lang;try{localStorage.setItem("uv-lang",lang)}catch(e){}render()});
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",render);
